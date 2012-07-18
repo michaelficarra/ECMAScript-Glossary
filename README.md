@@ -19,7 +19,7 @@ people you've never worked with becomes at least a little bit easier.
 
 <dl>
 <dt><a name="apply"/>apply
-  <dd>See function application.
+  <dd>See <a href="#function-application">function application</a>.
 <dt><a name="argument"/>argument [list]
   <dd>An expression (or comma-separated list of expressions) provided to a function during <a href="#function-application">function application</a>.
 <dt><a name="callable"/>callable
@@ -43,7 +43,7 @@ people you've never worked with becomes at least a little bit easier.
 <dt><a name="declared"/>declared
   <dd>An identifier is declared if a lookup in the scope chain would be successful. In other words, a bare reference to it (outside <code>typeof</code>) will not cause a <code>ReferenceError</code> to be thrown. The identifier need not enter scope through a variable declaration; <a href="#parameter">parameter</a> names, <a href="#named-function-expression">NFE</a> name, <a href="#function-declaration">FD</a> names, and <a href="#property">property</a> assignment of any member of the scope chain will all cause an identifier to be declared.
 <dt><a name="defined"/>defined
-  <dd>An unfortunately ambiguous term; instead, use <a href="#declared">declared</a> or "not an <code>undefined</code> value".
+  <dd>See <a href="#undefined">undefined</a>.
 <dt><a name="dynamic-member-access"/>dynamic member access
   <dd>A <a href="#member-access">member access</a> performed using the postfix <code>[]</code> syntactic form. May not qualify as "dynamic" if the value used within <code>[]</code> is able to be statically determined.
 <dt><a name="ES3"/>ES3
@@ -55,7 +55,7 @@ people you've never worked with becomes at least a little bit easier.
 <dt><a name="falsey"/>falsey
   <dd>Any expression that evaluates to a member of the set {<a href="#undefined-value"><code>undefined</code> value</a>, <code>null</code>, <code>false</code>, <code>0</code>, <code>-0</code>, <a href="#NaN-value"><code>NaN</code> value</a>, <code>""</code>}.
 <dt><a name="FD"/>FD
-  <dd>see <a href="#function-declaration">function declaration</a>
+  <dd>See <a href="#function-declaration">function declaration</a>.
 <dt><a name="function-application"/>function application
   <dd>Causing a <a href="#callable">callable</a> object to execute with a given <a href="#argument">argument list</a>.
 <dt><a name="function-call"/>function call
@@ -69,7 +69,7 @@ people you've never worked with becomes at least a little bit easier.
 <dt><a name="global"/>global
   <dd>A <a href="#property">property</a> of <a href="#gobal-object">the gobal object</a>.
 <dt><a name="global-object"/>[the] global object
-  <dd>An special object that serves as the root of every scope chain and the <a href="#context">context</a> of code executed in the global environment (outside any function body).
+  <dd>A special object that serves as the root of every scope chain and the <a href="#context">context</a> of code executed in the global environment (outside any function body).
 <dt><a name="hoisting"/>hoisting
   <dd>The treatment of a statement within a lexical environment as if it had prefixed the non-hoisted statements. In ECMAScript, variable declarations (without their optional initialisations) and <a href="#function-declarations">function declarations</a> are hoisted.
 <dt><a name="IIFE"/>IIFE
@@ -95,7 +95,7 @@ people you've never worked with becomes at least a little bit easier.
 <dt><a name="NaN-value"/>NaN value
   <dd><code>0/0</code>
 <dt><a name="NFE"/>NFE
-  <dd>see named function expression
+  <dd>See <a href="#named-function-expression">named function expression</a>.
 <dt><a name="parameter"/>parameter [list]
   <dd>An identifier (or comma-separated list of identifiers) used in the definition of a function. At runtime, the value of each parameter becomes the value that coordinates positionally with the <a href="#argument">argument list</a> given during <a href="#function-application">function application</a>.
 <dt><a name="own-property"/>own property
@@ -105,7 +105,7 @@ people you've never worked with becomes at least a little bit easier.
 <dt><a name="truthy"/>truthy
   <dd>Any expression that is not <a href="#falsey">falsey</a>.
 <dt><a name="undefined"/>undefined
-  <dd>See <a href="#defined">defined</a>.
+  <dd>An unfortunately ambiguous term; instead, use <a href="#declared">undeclared</a> or "<a href="#undefined-value"><code>undefined</code> value</a>".
 <dt><a name="undefined-value"/>undefined value
   <dd>A special value which is the initial value of the "undefined" <a href="#property">property</a> of the <a href="#global-object">global object</a>. This value is the same one created by applying a function that reaches the end of its execution without arriving at a <code>return</code> statement or performing a <a href="#member-access">member access</a> on an object where neither it nor the objects in its prototype chain contain the member.
 <dt><a name="unnamed-function-expression"/>unnamed function expression
